@@ -5,12 +5,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MHWOverlay {
+	partial class Data {
+		public static String version = "421409";
+	}
+
 	static class Program {
 		[STAThread]
 		static void Main() {
+			Console.WriteLine($"Initializing MHWOverlay({Data.version})");
+
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1());
+			Application.SetUnhandledExceptionMode(UnhandledExceptionMode.CatchException);
+			Overlay overlay = new Overlay();
+			Application.Run(overlay);
 		}
 	}
 }
