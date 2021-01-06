@@ -13,10 +13,10 @@ namespace MHWOverlay {
 			memoryManager = new MemoryManager("MonsterHunterWorld");
 			Console.WriteLine($"Initialized Controller");
 
-			UpdateResolver ur = new UpdateResolver(memoryManager);
-			// ur.FindIncreasedHunterBasePointer("Lidian");
-			// ur.FindIncreasedInstanceBasePointer("Lidian");
-			// ur.FindIncreasedMonsterBasePointer();
+			//UpdateResolver ur = new UpdateResolver(memoryManager);
+			//ur.FindIncreasedHunterBasePointer("Lidian");
+			//ur.FindIncreasedInstanceBasePointer("Lidian");
+			//ur.FindIncreasedMonsterBasePointer();
 		}
 		/**
 		public void PrintActiveHunterData() {

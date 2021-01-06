@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace MHWOverlay {
 	partial class Data {
-		public static String version = "421409";
+		public static String version = "421470";
 	}
 
 	static class Program {

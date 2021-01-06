@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MHWOverlay {
 	partial class Data {
-		public static UInt64 HunterBasePointer = 0x5073E70;
+		public static UInt64 HunterBasePointer = 0x5073E80;
 		public static UInt64 InstanceBasePointer = 0x5224BF8;
 		public static UInt64 HunterSize = 0x27E9F0;
 	}

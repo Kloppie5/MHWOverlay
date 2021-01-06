@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MHWOverlay {
 	partial class Data {
-		public static UInt64 MonsterBasePointer = 0x5074170;
+		public static UInt64 MonsterBasePointer = 0x5074180;
 
 		public static Dictionary<String, String> emTranslate = new Dictionary<String, String>() {
 			{ "em\\em001\\00\\mod\\em001_00", "Rathian" },
@@ -100,8 +100,8 @@ namespace MHWOverlay {
 			UInt64 HPComponent = memoryManager.Read<UInt64>(address + 0x7670);
 			Single MAX_HP = memoryManager.Read<Single>(HPComponent + 0x60);
 			Single HP = memoryManager.Read<Single>(HPComponent + 0x64);
-			if ( MAX_HP - HP > 1000.0f && HP > 1000.0f )
-				SetHealth(1000.0f);
+			if ( HP > 1000.0f )
+				SetHealth(1.0f);
 		}
 
 		public void Kill ( ) {
